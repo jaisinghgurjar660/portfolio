@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAISINGH GURJAR - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1>JAISINGH GURJAR</h1>
+            <p>Passionate BCA student, developer, and problem solver.</p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="profile-img">
+                    <img src="11.jpeg" alt="JAISINGH GURJAR">
+                </div>
+                <div class="about-text">
+                    <p>
+                        I am a <strong>BCA student</strong> with a strong foundation in programming, web development, and problem-solving. Skilled in C++, Python, and Core Java, I have hands-on experience building dynamic websites and applications.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education">
+        <div class="container">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>BCA</strong>,  Amity University Rajasthan (08/2022 - Present), CGPA: 7.17</li>
+                <li><strong>12th</strong>, Virat Public Sr. Sec. School (06/2020 - 05/2021), Percentage: 93.60%</li>
+                <li><strong>10th</strong>, Virat Public Sr. Sec. School (06/2018 - 03/2019), Percentage: 78.67%</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section class="experience">
+        <div class="container">
+            <h2>Work Experience</h2>
+            <ul>
+                <li>
+                    <strong>Web Development Intern</strong> - GRRAS SOLUTIONS. (06/2024 - 07/2024)
+                    <p>Developed a website for managing student details with a user-friendly interface and backend database integration.</p>
+                </li>
+                <li>
+                    <strong>Web Development Intern</strong> - Software Technology Parks of India (07/2023 - 08/2023)
+                    <p>Created a fully functional e-commerce website with features like product listings and a shopping cart.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>C++</li>
+                <li>Python</li>
+                <li>Core Java</li>
+                <li>HTML, CSS, JavaScript</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <ul>
+                <li data-link="project1.html">Student Detail Management System</li>
+                <li data-link="project2.html">Netflix Clone</li>
+                <li data-link="project3.html">E-commerce Site</li>
+            </ul>
+        </div>
+    </section>
+
+
+    
+
+    <!-- Certifications Section -->
+    <section class="certifications">
+        <div class="container">
+            <h2>Certifications</h2>
+            <ul>
+                <li>NSS Programme Completion (2022-2024)</li>
+                <li>National Youth Festival 2024 - Represented Rajasthan</li>
+                <li>NSS Special Camp at Amity University (2024)</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <!-- <form id="contactForm"> -->
+                <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+
+                    <!-- Replace with your Access Key -->
+                    <input type="hidden" name="access_key" value="fc080ba5-60b0-4d69-a345-45459ac9f79a">
+                
+                    <!-- Form Inputs. Each input must have a name="" attribute -->
+                    <input type="text" name="name" required>
+                    <input type="email" name="email" required>
+                    <textarea name="message" required></textarea>
+                
+                    <!-- Honeypot Spam Protection -->
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                
+                    <!-- Custom Confirmation / Success Page -->
+                    <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+                
+                    <button type="submit">Submit Form</button>
+                
+                </form>
+            <!-- </form> -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 JAISINGH GURJAR. All Rights Reserved.</p>
+    </footer>
+    <script>
+        // Redirect to project pages on click
+        document.querySelectorAll('.projects ul li[data-link]').forEach(item => {
+            item.addEventListener('click', () => {
+                window.location.href = item.getAttribute('data-link');
+            });
+        });
+    </script>
+</body>
+</html>
